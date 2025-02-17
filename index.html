@@ -1,73 +1,252 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberGeist</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .centered {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CyberGeist</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
-<body>
-    <!-- Header Section -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1>CyberGeist</h1>
-            <p class="lead">Ние изследваме изкуствен интелект</p>
-        </div>
-    </header>
 
+<body class="index-page">
 
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-    <!-- Portfolio Section -->
-    <section class="py-5 ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-6">
-                        <center><img src="project1.jpg" class="card-img-top" alt="Проект 1"></center>
-                        <div class="card-body centered">
-                            <h5 class="card-title">Лого 1</h5>
-                            <p class="card-text">Традиционно</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mb-6">
-                        <center><img src="project2.jpg" class="card-img-top" alt="Проект 2"> </center>
-                        <div class="card-body centered">
-                            <h5 class="card-title">Лого 2</h5>
-                            <p class="card-text">Изкуствен интелект</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <center>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">CiberGeist</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Начало<br></a></li>
+          <li><a href="#services">Анкета</a></li>
+          <li><a href="#results">Резултати от анкета</a></li>
+          <li><a href="#testimonials">Екип</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>Ние сме CiberGeist</h2>
+        <p><span class="typed" data-typed-items="Нашата мисия е, да изследваме възможностите, на изкуствения интелект, и да покажем, че бъдещето е вече тук"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Анкета</h2>
+        <p>Вашето мнение е важно за нас!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container text-center">
+
         <iframe id="surveyFrame" src="https://docs.google.com/forms/d/e/1FAIpQLSdTs7ZhmF1Z8dJXSY7Jd7KX7JO5k5CUDg1s0sjJnjmJuw8nvg/viewform?embedded=true" width="640" height="1514" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Results Section -->
+    <section id="results" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Резултати от анкетата</h2>
         
+      </div><!-- End Section Title -->
+
+      <div class="container text-center">
+
         <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTKKoeP2uYxQkA_QnWBmuv1aCffE_PMh1P5ZjIOlLQIjWR__YbW-c_1bKq6gDbfArmKdWf18gO-m7Y9/pubchart?oid=914700302&amp;format=interactive"></iframe>
-        
-    </center>>
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>&copy; 2025 CyberGeist.</p>
-        </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </div>
+
+    </section><!-- /Results Section -->
+
     
-</body>
-</html>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section accent-background">
 
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <!--<img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">-->
+                <h3>Браян</h3>
+                <h4>Ученик &amp; от VIII "д" клас</h4>
+                
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Първа езикова гимназия</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <!--<img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">-->
+                <h3>Име 2</h3>
+                <h4>Ученик &amp; от VIII "д" клас</h4>
+                
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Първа езикова гимназия</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <!--<img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">-->
+                <h3>Име 3</h3>
+                <h4>Ученик &amp; от VIII "д" клас</h4>
+                
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Първа езикова гимназия</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <!--<img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">-->
+                <h3>Име 4</h3>
+                <h4>Ученик &amp; от VIII "д" клас</h4>
+                
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Първа езикова гимназия</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <!--<img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">-->
+                <h3>Павел</h3>
+                <h4>Ученик &amp; от VIII "д" клас</h4>
+                
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Първа езикова гимназия</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">CyberGleis</strong> </p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
