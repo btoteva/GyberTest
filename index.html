@@ -260,6 +260,20 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.innerWidth > 768) {
+        var typed = new Typed('.typed', {
+          stringsElement: '.typed-strings',
+          typeSpeed: 50,
+          backSpeed: 50,
+          backDelay: 2000,
+          loop: true
+        });
+      }
+    });
+  </script>
+  
 </body>
 
 </html>
