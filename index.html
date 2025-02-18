@@ -26,7 +26,17 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <style>
+    /* Скриване на елемента на мобилни екрани */
+    @media (max-width: 768px) {
+      .hide-on-mobile {
+        display: none;
+      }
+      .show-on-mobile {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -62,7 +72,8 @@
 
       <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
         <h2>Ние сме CiberGeist</h2>
-        <p><span class="typed" data-typed-items="проучваме,и показваме, че бъдещето, е вече тук"></span></p>
+        <p class="hide-on-mobile"><span class="typed" data-typed-items="проучваме,и показваме, че бъдещето, е вече тук"></span></p>
+        <p class="show-on-mobile"><span>проучваме и показваме, че бъдещето е вече тук</span></p>
       </div>
 
     </section><!-- /Hero Section -->
