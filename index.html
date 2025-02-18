@@ -27,12 +27,15 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <style>
-    /* Скриване на елемента на мобилни екрани */
-    @media (max-width: 768px) {
-      .hide-on-mobile {
+    /* Скриване на елемента на големи екрани */
+    @media (min-width: 769px) {
+      .show-on-mobile {
         display: none;
       }
-      .show-on-mobile {
+    }
+    /* Показване на елемента на мобилни екрани */
+    @media (max-width: 768px) {
+      .hide-on-mobile {
         display: none;
       }
     }
